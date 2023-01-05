@@ -1,13 +1,13 @@
 import 'package:clean_architecture_course/Features/number_trivia/domain/entities/number_trivial.dart';
 import 'package:clean_architecture_course/Features/number_trivia/domain/repositories/number_trivial_repository.dart';
 import 'package:clean_architecture_course/Features/number_trivia/domain/usecases/get_random_number_trivial.dart';
-import 'package:clean_architecture_course/core/error/usecase.dart/usecase.dart';
+import 'package:clean_architecture_course/core/usecase.dart/usecase.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 
 class MockNumberTriviaRepository extends Mock
-    implements NumberTrivialRepository {}
+    implements NumberTriviaRepository {}
 
 void main() {
   late MockNumberTriviaRepository mockNumberTriviaRepository;

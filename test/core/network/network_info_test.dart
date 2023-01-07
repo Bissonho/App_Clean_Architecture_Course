@@ -19,10 +19,8 @@ void main() {
     test(
       'should return true if the device is connected to the internet',
       () async {
-        when(mockDataConnectionChecker.hasConnection as Function())
+        when(() => mockDataConnectionChecker.hasConnection)
             .thenAnswer((_) => Future.value(true));
-
-        verify(mockDataConnectionChecker.hasConnection as Function());
 
         final result = await networkInfo.isConnected;
 
